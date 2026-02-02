@@ -19,8 +19,6 @@ public class Target : MonoBehaviour
         transform.position = RandomSpawnPos();
     }
 
-}
-
 Vector3 RandomForce()
 {
     return Vector3.up * Random.Range(minSpeed, maxSpeed);
@@ -35,3 +33,5 @@ Vector3 RandomSpawnPos()
 {
     return new Vector3(Random.Range(-xRange, xRange), ySpawnPos);
 }
+}
+
