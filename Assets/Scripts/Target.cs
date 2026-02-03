@@ -26,7 +26,11 @@ public class Target : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        if (other.CompareTag("COLLISIONTHING") != true)
+        {
+           Destroy(gameObject);
+        }
+   
     }
 
 Vector3 RandomForce()
