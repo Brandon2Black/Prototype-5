@@ -11,6 +11,8 @@ public class Target : MonoBehaviour
     private float xRange = 4;
     private float ySpawnPos = -3;
 
+   public bool isGameActive;
+
     public int pointValue;
 
     public ParticleSystem explosionParticle;
@@ -24,6 +26,7 @@ public class Target : MonoBehaviour
         targetRb.AddForce(RandomForce(), ForceMode.Impulse);
         targetRb.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
         transform.position = RandomSpawnPos();
+        isGameActive = true;
     }
 
     private void OnMouseDown()
@@ -39,8 +42,8 @@ public class Target : MonoBehaviour
         if (other.CompareTag("COLLISIONTHING") != true)
         {
            Destroy(gameObject);
+             gameManager.GameOver();
         }
-   
     }
 
 Vector3 RandomForce()
