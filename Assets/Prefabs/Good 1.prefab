@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4545073005470089795}
   - component: {fileID: 885809872768343892}
   - component: {fileID: 2392677628279197215}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Good 1
   m_TagString: COLLISIONTHING
   m_Icon: {fileID: 0}
@@ -146,5 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256c586db50d5483aac81e05e4c6bcf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGameActive: 0
   pointValue: 1
   explosionParticle: {fileID: 6601538019107920666, guid: 70a1428e5f80a4866a779ef1ab9fe521, type: 3}
