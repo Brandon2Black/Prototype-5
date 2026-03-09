@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
         score = 0;
         UpdateScore(0);
        isGameActive = true;
+       titleScreen.gameObject.SetActive(true);
     }
 
 
@@ -67,12 +68,13 @@ public class GameManager : MonoBehaviour
     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
   }
 
-  public void StartGame()
+  public void StartGame(int difficulty)
   {
     isGameActive = true;
     score = 0;
     StartCoroutine(SpawnTarget());
     UpdateScore(0);
     titleScreen.gameObject.SetActive(false);
+    spawnRate /= difficulty;
   }
 }

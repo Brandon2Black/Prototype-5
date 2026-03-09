@@ -362,6 +362,7 @@ GameObject:
   - component: {fileID: 455859096}
   - component: {fileID: 455859095}
   - component: {fileID: 455859094}
+  - component: {fileID: 455859097}
   m_Layer: 5
   m_Name: Easy
   m_TagString: Untagged
@@ -433,7 +434,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1754163850}
+      - m_Target: {fileID: 455859097}
         m_TargetAssemblyTypeName: DifficultyButton, Assembly-CSharp
         m_MethodName: SetDifficulty
         m_Mode: 1
@@ -483,6 +484,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455859092}
   m_CullTransparentMesh: 1
+--- !u!114 &455859097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455859092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab0aa16be05574de383284f060748b0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 1
 --- !u!1 &494445611
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,7 +945,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -34.6}
+  m_AnchoredPosition: {x: 0, y: -39}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1155832822
@@ -1045,7 +1059,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1259619946
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1467,7 +1481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 368.2, y: -177.88}
+  m_AnchoredPosition: {x: 305, y: -154}
   m_SizeDelta: {x: -351, y: -227}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1345896416
@@ -1579,6 +1593,7 @@ GameObject:
   - component: {fileID: 1503776323}
   - component: {fileID: 1503776322}
   - component: {fileID: 1503776321}
+  - component: {fileID: 1503776324}
   m_Layer: 5
   m_Name: Hard
   m_TagString: Untagged
@@ -1650,7 +1665,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1754163850}
+      - m_Target: {fileID: 1503776324}
         m_TargetAssemblyTypeName: DifficultyButton, Assembly-CSharp
         m_MethodName: SetDifficulty
         m_Mode: 1
@@ -1700,6 +1715,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503776319}
   m_CullTransparentMesh: 1
+--- !u!114 &1503776324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503776319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab0aa16be05574de383284f060748b0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 3
 --- !u!1 &1611319330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,7 +1843,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1754163849}
   - component: {fileID: 1754163848}
-  - component: {fileID: 1754163850}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Bad
@@ -1860,18 +1887,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1754163850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754163847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab0aa16be05574de383284f060748b0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1755010804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,6 +2116,7 @@ GameObject:
   - component: {fileID: 1845870574}
   - component: {fileID: 1845870573}
   - component: {fileID: 1845870572}
+  - component: {fileID: 1845870575}
   m_Layer: 5
   m_Name: Medium
   m_TagString: Untagged
@@ -2172,7 +2188,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1754163850}
+      - m_Target: {fileID: 1845870575}
         m_TargetAssemblyTypeName: DifficultyButton, Assembly-CSharp
         m_MethodName: SetDifficulty
         m_Mode: 1
@@ -2222,6 +2238,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845870570}
   m_CullTransparentMesh: 1
+--- !u!114 &1845870575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845870570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab0aa16be05574de383284f060748b0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 2
 --- !u!1 &1994596896
 GameObject:
   m_ObjectHideFlags: 0
